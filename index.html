@@ -3,6 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ID Card Designer</title>
         <link rel="stylesheet" href="style.css"> <!-- LINK HTML - CSS, relation is stylesheet and the file is style.css -->
+        <script src="myscripts.js"></script>
     </head>
     
     <body>
@@ -10,58 +11,33 @@
         <div class="container">
                 <div class="profile-box">
                     <div class="inputdata">
-                        <img src="images/face.jpg" class="profile-picture"><br>
+                        <label for="faceIMG">
+                            <input type="file" name="faceIMG" id="faceIMG" style="display:none;" onchange="changeFACE(event)"/>
+                            
+                            <img id="faceImage" class="profile-picture" src="images/face.jpg" style="cursor: pointer;"/>
+                        </label>
                     
-                        <img src="images/companylogo.jpg" class="company-logo"><br><br><br>
+                        <label for="companyIMG">
+                            <input type="file" name="companyIMG" id="companyIMG" style="display:none;" onchange="changeCOMP(event)"/>
+                            
+                            <img id="company-logo" class="company-logo" src="images/companylogo.jpg" style="cursor: pointer;"/>
+                        </label>
+                       <br><br><br>
                     
-                        <input class="textbox" type="text" placeholder="Company Name">
+                        <input id="companyname" class="textbox" type="text" placeholder="Company Name">
                         <br><br>
-                        <input class="textbox" type="text" placeholder="Employee Name">
+                        <input id="employeename" class="textbox" type="text" placeholder="Employee Name">
                         <br><br>
-                        <input class="textbox" type="text" placeholder="Employee Designation">
+                        <input id="employeedesignation"class="textbox" type="text" placeholder="Employee Designation">
                         <br><br>
-                        <input class="textbox" type="text" placeholder="Employee Number"><br><br><br>
+                        <input id="employeenumber" class="textbox" type="text" placeholder="Employee Number"><br><br><br>
 
-                        <button class="button-36" role="button">Create PDF!</button>
+                        <button class="button-36" role="button" onclick="pullDetails    ()">Create PDF!</button>
                     </div>
                 </div>
         </div>
         
     </body>
-    
-<!--
-    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-    <p><label for="file" style="cursor: pointer;">Upload Profile Picture</label></p>
-    <p><img id="output" width="200" /></p>
 
-    <script>
-           var loadFile = function(event) {
-	           var image = document.getElementById('output');
-	           image.src = URL.createObjectURL(event.target.files[0]);
-           };
-    </script>
-    
-    <img src="img_avatar.png" alt="Avatar" class="avatar">
-    
- TEST -- unimportant
-    <form action="/action_page.php">
-        <label for="img">Select image:</label>
-        <input type="file" id="img" name="img" accept="image/*">
-        <input type="submit">
-    </form>
-
-    
-    <label for="fname">First Name: </label>
-    <input type="text" id="fname" name="fname"><br><br>
-    
-    <label for="lname">Last Name: </label>
-    <input type="text" id="lname" name="lname"><br><br>
-    
-    <label for="title">Employee Designation: </label>
-    <input type="title" id="title" name="title"><br><br>
-    
-    <label for="Employee_No">Employee Number: </label>
-    <input type="Employee_No" id="Employee_No" name="Employee_No"><br><br>
--->
     
 </html>
