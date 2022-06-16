@@ -12,3 +12,6 @@ Compatible Database Platform/Technologies: Google FireBase -- Realtime Database,
 
 An application to allow employees of a given company to enter their information. This will give them a PDF of their ID CARD, and push their information directly onto the companies database.
 *ALL INFORMATION WILL GO STRAIGHT TO DEFAULT SET DATABASE -- BE CAREFUL!*
+
+
+SAVED TO MY GFB DataBase
