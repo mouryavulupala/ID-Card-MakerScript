@@ -1,81 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/*
+*     Author:                   Mourya Vulupala
+*     Finished/Worked on Date:  Jun 2022
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #ededff; /*for browsers that dont have gradient feature - default color*/
-    background-image: linear-gradient(#ededff, #afafbd 90%);
-    
-    background-size: cover;
-    background-position: center;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    box-shadow: 1px 0px 40px 12px;
-    
+  width: 100vw;
+  height: 100vh;
+  background-color: #ededff;
+  /*for browsers that dont have gradient feature - default color*/
+  background-image: linear-gradient(#ededff, #afafbd 90%);
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 1px 0px 40px 12px;
+
 }
 
 
-.profile-box{
-    height: 89vh;
-    width: 25vw;
-    background: #31384e;
-    text-align: center;
-    
-    color: #fff;
-    position: relative;
-    border-radius: 12px;
-    
-    box-shadow: 0px 5px 15px black;
-    
+.profile-box {
+  height: 89vh;
+  width: 25vw;
+  background: #31384e;
+  text-align: center;
+
+  color: #fff;
+  position: relative;
+  border-radius: 12px;
+
+  box-shadow: 0px 5px 15px black;
+
 }
 
 .inputdata {
-    padding-top: 2vh;
-    width: 90%;
-    height: 90%;
-    overflow: auto;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+  padding-top: 2vh;
+  width: 90%;
+  height: 90%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.profile-picture{
-    width: 12vw;
-    height: 12vw;
-    border-radius: 50%;
-    box-shadow: 0px 0px 30px black;
+.profile-picture {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px black;
 }
 
 .company-logo {
-    width: 4.5vw;
-    height: 4.5vw;
-    border-radius: 50%;
-/*    box-shadow: 0px 0px 2px black;*/
-    margin-top: -50;
-    margin-left: 140;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  /*    box-shadow: 0px 0px 2px black;*/
+  margin-top: -50;
+  margin-left: 140;
 }
 
 .textbox {
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-    
-	border: 0px solid #848484;
-	outline:0;
-	height:6.5%;
-	width: 81%;
-    background-color: ghostwhite;
-    padding: 20;
-    font-family: sans-serif;
- }
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  border: 0px solid #848484;
+  outline: 0;
+  height: 6.5%;
+  width: 81%;
+  background-color: ghostwhite;
+  padding: 20;
+  font-family: sans-serif;
+}
 
 .button-36 {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
@@ -85,7 +94,7 @@
   color: #FFFFFF;
   cursor: pointer;
   flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 500;
   height: 4rem;
@@ -107,9 +116,4 @@
   .button-36 {
     padding: 0 2.6rem;
   }
-}
-
-
-.ID-Card{
-    
 }
