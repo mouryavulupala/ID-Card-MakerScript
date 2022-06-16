@@ -1,6 +1,6 @@
 # Company Employee ID Card and Information Storage WebApp
 BY: Mourya Vulupala
-*Finished/Worked on: Jun 2022
+***Finished/Worked on: Jun 2022
 
 --------------------------------------------------------------------------------
 
